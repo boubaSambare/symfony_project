@@ -1,6 +1,6 @@
 {
     "devDependencies": {
-        "@symfony/webpack-encore": "^0.19.0"
+        "@symfony/webpack-encore": "^0.20.1"
     },
     "license": "UNLICENSED",
     "private": true,
@@ -9,5 +9,11 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production"
+    },
+    "dependencies": {
+        "bootstrap": "4.0.0",
+        "holderjs": "^2.9.4",
+        "jquery": "^3.3.1",
+        "popper.js": "^1.14.3"
     }
 }

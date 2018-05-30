@@ -30,11 +30,11 @@ class BlogControler extends AbstractController
     /**
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
-     * @Route("/", name="blog_index" )
+     * @Route("/blog", name="blog_index" )
      */
 
-    public function index(Request $request)
+    public function index()
     {
-        return $this->render("base.html.twig",["message"=> $this->greeting->greet($request->get("name"))]);
+        return $this->render("base.html.twig");
     }
 }
